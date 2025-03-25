@@ -72,12 +72,16 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload Google Fonts CSS -->
     <link
       rel="preload"
       as="style"
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Spectral:ital,wght@1,300;0,800&display=swap"
       onload="this.onload=null;this.rel='stylesheet'"
     />
+
+    <!-- Preload WOFF2 fonts actually used -->
     <link
       rel="preload"
       as="font"
@@ -92,10 +96,19 @@
       type="font/woff2"
       crossorigin
     />
+    <link
+      rel="preload"
+      as="font"
+      href="https://fonts.gstatic.com/s/spectral/v14/rnCu-xNNww_2s0amA9M8qtHEWfSFXQ.woff2"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- Fallback for users without JavaScript -->
     <noscript>
       <link
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Spectral:ital,wght@1,300;0,800&display=swap"
       />
     </noscript>
 
