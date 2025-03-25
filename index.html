@@ -11,14 +11,6 @@
     />
     <title>Photographe professionnelle - Nina Carducci</title>
 
-    <!-- Preload de l'image principale -->
-    <link
-      rel="preload"
-      as="image"
-      href="./assets/images/nina.webp"
-      fetchpriority="high"
-    />
-
     <!-- Schema.org Local Business -->
     <script type="application/ld+json">
       {
@@ -81,9 +73,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      rel="stylesheet"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+      />
+    </noscript>
 
     <!-- Scripts -->
     <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
@@ -115,6 +115,8 @@
                 src="assets/images/instagram.webp"
                 alt="Logo Instagram"
                 loading="lazy"
+                width="20"
+                height="20"
               />
             </a>
           </li>
@@ -159,7 +161,7 @@
                 src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
                 class="d-block w-100"
                 alt="Personne traversant un passage piéton"
-                loading="lazy"
+                loading="eager"
                 width="1920"
                 height="888"
               />
@@ -442,6 +444,8 @@
               src="./assets/images/camera.webp"
               alt="Appareil photo professionnel"
               loading="lazy"
+              width="418.69"
+              height="417.81"
             />
           </div>
         </div>

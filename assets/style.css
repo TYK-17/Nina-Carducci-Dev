@@ -67,8 +67,22 @@ body {
   z-index: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* ou "cover" selon effet désiré */
+  aspect-ratio: 2.16; /* optionnel pour forcer le bon ratio */
+}
+
 .picture img {
   width: 100%;
+  height: auto;
 }
 #about-me {
   flex: 2;
@@ -89,10 +103,6 @@ body {
   font-size: 14px;
 }
 
-/*#gallery {
-  	min-height: 100vh; 
-}
-*/
 .title {
   text-align: center;
   padding-block: 2em;
@@ -161,6 +171,7 @@ body {
   margin: auto;
   background-color: #a8d5d8;
   position: relative;
+  min-height: 500px;
 }
 #services .container::before {
   content: " ";
