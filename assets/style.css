@@ -368,3 +368,6 @@ input[type="submit"] {
     width: 80%;
   }
 }
+.tags-bar .nav-link {
+  cursor: pointer;
+}
