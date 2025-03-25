@@ -3,9 +3,10 @@ body {
   margin: auto;
 }
 * {
-  font-family: "Inter";
+  font-family: "Inter", system-ui, sans-serif;
   font-style: normal;
 }
+
 .top-header {
   background-color: white;
   position: sticky;
@@ -93,7 +94,7 @@ img {
   font-size: 30px;
 }
 .about-me__introduction {
-  font-family: "Spectral";
+  font-family: "Spectral", Georgia, serif;
   font-weight: 800;
   font-style: italic;
   width: 60%;
@@ -149,20 +150,21 @@ img {
 }
 
 .quote {
-  font-family: "Spectral";
+  font-family: "Spectral", Georgia, serif;
   font-style: italic;
   width: 70%;
   margin: auto;
   padding-block: 3em;
 }
 .quote__text {
-  font-family: Spectral;
+  font-family: "Spectral", Georgia, serif;
   font-style: italic;
   font-weight: 300;
   font-size: 40px;
+  min-height: 4em;
 }
 .quote__author {
-  font-family: Spectral;
+  font-family: "Spectral", Georgia, serif;
   font-weight: 800;
   font-size: 22px;
 }
@@ -194,7 +196,9 @@ img {
   background-color: white;
   max-width: 390px;
   width: 30%;
-  height: 337px;
+  height: auto;
+  min-height: 337px;
+  aspect-ratio: 4 / 3;
   padding: 1em;
   display: flex;
   flex-direction: column;
