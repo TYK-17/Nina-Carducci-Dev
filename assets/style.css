@@ -260,6 +260,11 @@ input[type="submit"] {
   color: #ffffff;
 }
 
+.nav-link:focus {
+  outline: 2px solid #5f5a25;
+  outline-offset: 2px;
+}
+
 .carousel-item {
   height: auto;
   overflow: hidden;
