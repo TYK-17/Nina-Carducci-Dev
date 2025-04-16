@@ -456,7 +456,12 @@
               N’hésitez pas à m’écrire ! Je vous répondrai en moins de 24
               heures.
             </p>
-            <form action="#" method="post" aria-label="Formulaire de contact">
+            <form
+              id="contactForm"
+              action="javascript:void(0)"
+              method="post"
+              aria-label="Formulaire de contact"
+            >
               <label for="nom">Nom</label>
               <input type="text" name="nom" id="nom" required />
 
@@ -474,6 +479,10 @@
 
               <input type="submit" value="Envoyer" />
             </form>
+            <div
+              id="formMessage"
+              style="margin-top: 1em; color: green; font-weight: bold"
+            ></div>
           </div>
           <div class="picture right">
             <img
